@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, BookOpen, Users, FileText, LifeBuoy, User, Settings, LogOut } from 'lucide-react';
+import { Home, BookOpen, Users, FileText, LifeBuoy, User, Settings, LogOut, Bell } from 'lucide-react';
 import { createClient } from '@/lib/supabase/client';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
@@ -12,6 +12,7 @@ const navItems = [
   { icon: BookOpen, label: 'Departments', href: '/departments' },
   { icon: Users, label: 'Lobby', href: '/lobby' },
   { icon: FileText, label: 'Assignments', href: '/assignments' },
+  { icon: Bell, label: 'Announcements', href: '/announcements' },
   { icon: LifeBuoy, label: 'Help', href: '/help' },
 ];
 
